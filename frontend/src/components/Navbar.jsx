@@ -13,13 +13,13 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <Link to="/" className="brand">
-        🎬 CineBook
+        📚 SkillStore
       </Link>
       <nav className="nav-links">
-        <Link to="/">Movies</Link>
+        <Link to="/">Courses</Link>
         {user ? (
           <>
-            <Link to="/my-bookings">My Bookings</Link>
+            <Link to="/my-courses">My Courses</Link>
             <span className="nav-user">Hi, {user.name}</span>
             <button className="btn btn-ghost" onClick={handleLogout}>
               Logout

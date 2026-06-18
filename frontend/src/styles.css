@@ -81,6 +81,123 @@ img {
   font-size: 0.85rem;
 }
 
+.hero {
+  background: linear-gradient(135deg, rgba(233, 69, 96, 0.18), rgba(26, 26, 46, 0.96));
+  border-radius: var(--radius);
+  padding: 40px 32px;
+  margin-bottom: 24px;
+}
+.hero-copy {
+  max-width: 720px;
+}
+.eyebrow {
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.hero h1 {
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  line-height: 1.05;
+  margin-bottom: 16px;
+}
+.hero-text {
+  color: var(--muted);
+  max-width: 640px;
+  margin-bottom: 24px;
+}
+.search-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+.course-count {
+  color: var(--text);
+  font-size: 0.9rem;
+}
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--gap);
+}
+.course-card {
+  display: block;
+  background: var(--card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  color: var(--text);
+}
+.course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+}
+.course-card.small {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 12px;
+}
+.course-card .poster {
+  aspect-ratio: 16/10;
+  position: relative;
+}
+.course-card .poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.course-card-body {
+  padding: 16px;
+}
+.course-card-body h3 {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+.course-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 10px 0;
+}
+.price {
+  margin-top: 12px;
+  font-weight: 700;
+  color: var(--primary);
+}
+.course-details .tags {
+  margin: 10px 0 20px;
+}
+.course-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.course-details .course-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 18px;
+}
+.course-details .course-actions .muted {
+  margin: 0;
+}
+.booking-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.btn-danger {
+  background: var(--danger);
+  color: #fff;
+}
+.btn-danger:hover {
+  background: #c0392b;
+}
+
 /* ===== BUTTONS ===== */
 .btn {
   display: inline-flex;
