@@ -1,6 +1,5 @@
-# CineBook -- Full-Stack Movie Ticket Booking Platform
+# CineBook -- Course Buying Platform 
 
-A production-style movie ticket booking system (like BookMyShow) built with React, Express, Sequelize, and PostgreSQL.
 
 ---
 
